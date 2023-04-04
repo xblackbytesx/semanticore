@@ -1,4 +1,4 @@
-import type { Meta, Story } from '@storybook/web-components';
+import type { Meta, StoryFn } from '@storybook/web-components';
 import './ScHero.ts';
 import { ScHero } from './ScHero';
 
@@ -12,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<typeof ScHero> = (args) => {
+const Template: StoryFn<typeof ScHero> = (args) => {
   const element = document.createElement('sc-hero') as ScHero;
   element.count = args.count;
   element.docsHint = args.docsHint;

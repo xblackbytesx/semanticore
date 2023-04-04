@@ -1,4 +1,4 @@
-import type { Meta, Story } from '@storybook/web-components';
+import type { Meta, StoryFn } from '@storybook/web-components';
 import './ScButton.ts';
 import { ScButton } from './ScButton';
 
@@ -16,7 +16,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<Partial<ScButton>> = (args) => {
+const Template: StoryFn<Partial<ScButton>> = (args) => {
   const button = document.createElement('sc-button') as ScButton;
   Object.assign(button, args);
   return button;
