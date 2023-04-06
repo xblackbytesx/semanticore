@@ -22,6 +22,8 @@ export class ScHero extends LitElement {
    */
   @property({ type: Number })
   count = 0
+  static count: number
+  static docsHint: string
 
   render() {
     return html`
@@ -58,6 +60,7 @@ export class ScHero extends LitElement {
       will-change: filter;
       transition: filter 300ms;
     }
+    
     .logo:hover {
       filter: drop-shadow(0 0 2em #646cffaa);
     }
@@ -80,6 +83,7 @@ export class ScHero extends LitElement {
       color: #646cff;
       text-decoration: inherit;
     }
+
     a:hover {
       color: #535bf2;
     }

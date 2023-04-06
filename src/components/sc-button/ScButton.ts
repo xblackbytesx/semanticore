@@ -1,6 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';
+import '../../themes/semanticore/theme.css';
 
 @customElement('sc-button')
 export class ScButton extends LitElement {
@@ -21,23 +22,28 @@ export class ScButton extends LitElement {
         display: inline-block;
         line-height: 1;
       }
+
       .sc-button--primary {
         color: white;
-        background-color: #1ea7fd;
+        background-color: var(--btn-primary-bg-color);
       }
+
       .sc-button--secondary {
         color: #333;
         background-color: transparent;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
       }
+
       .sc-button--small {
         font-size: 12px;
         padding: 10px 16px;
       }
+
       .sc-button--medium {
         font-size: 14px;
         padding: 11px 20px;
       }
+      
       .sc-button--large {
         font-size: 16px;
         padding: 12px 24px;

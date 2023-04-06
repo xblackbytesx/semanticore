@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/components/sc-hero/sc-hero.ts',
+      entry: 'src/components/sc-button/ScButton.ts',
       formats: ['es'],
     },
     rollupOptions: {

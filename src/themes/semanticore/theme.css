@@ -1,0 +1,5 @@
+@import url(./palette.css);
+
+:root {
+  --btn-primary-bg-color: var(--color-blue-one);
+} 
