@@ -1,25 +1,13 @@
 import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import semanticoreLogo from '/semanticore.svg'
+import '@/themes/semanticore/theme.css';
 
-
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
 @customElement('sc-hero')
 export class ScHero extends LitElement {
-  /**
-   * Copy for the read the docs hint.
-   */
   @property()
   docsHint = 'Click on the logo to learn more'
 
-  /**
-   * The number of times the button has been clicked.
-   */
   @property({ type: Number })
   count = 0
   static count: number
@@ -99,9 +87,11 @@ export class ScHero extends LitElement {
       cursor: pointer;
       transition: border-color 0.25s;
     }
+
     button:hover {
       border-color: #646cff;
     }
+
     button:focus,
     button:focus-visible {
       outline: 4px auto -webkit-focus-ring-color;
@@ -111,6 +101,7 @@ export class ScHero extends LitElement {
       a:hover {
         color: #747bff;
       }
+      
       button {
         background-color: #f9f9f9;
       }

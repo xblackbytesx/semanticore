@@ -1,5 +1,8 @@
 @import url(./palette.css);
 
 :root {
+  --btn-primary-color: var(--color-white-one);
   --btn-primary-bg-color: var(--color-blue-one);
+  --btn-secondary-color: var(--color-grey-one);
+  --btn-secondary-bg-color: transparent;
 } 
