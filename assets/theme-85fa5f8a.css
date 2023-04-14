@@ -1,0 +1,1 @@
+:root{--color-white-one: hsl(0, 0%, 100%);--color-blue-one: hsl(203, 98%, 55%);--color-grey-one: hsl(0, 0%, 20%)}:root{--btn-primary-color: var(--color-white-one);--btn-primary-bg-color: var(--color-blue-one);--btn-secondary-color: var(--color-grey-one);--btn-secondary-bg-color: transparent}
