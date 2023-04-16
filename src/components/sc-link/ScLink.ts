@@ -5,7 +5,6 @@ import '@/themes/semanticore/theme.css';
 @customElement('sc-link')
 export class ScLink extends LitElement {
   @property({ type: String }) template: 'plain' | 'thumb' | 'feature' = 'thumb';
-  @property({ type: Function }) onClick?: () => void;
 
   render() {
 
